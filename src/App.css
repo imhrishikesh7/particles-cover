@@ -1,0 +1,60 @@
+/* Add this in your App.css or similar file */
+body {
+  margin: 0;
+  overflow: hidden;
+  /* background-color: black; */
+}
+
+canvas {
+  display: block;
+}
+
+
+.app-container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: end; /* Centers the scene horizontally */
+  align-items: center; /* Centers the scene vertically */
+}
+.app-container .cover-logo{
+  position: absolute;
+  width: 20%;
+  top: 2%;
+  left: 1%;
+}
+.app-container .cover-subtitle{
+  position: absolute;
+  color: #123c61;
+  font-weight: 900;
+  left: 1%;
+  bottom: 2%;
+}
+  .app-container .re{
+  position: absolute;
+  font-weight: 900;
+  left: 29%;
+  color: #123c61;
+  top: 50%;
+  font-size: 70px;
+  transform: translate(-100%, -50%);
+  z-index: 1;
+}
+.scene-container {
+  width: 70%; /* Takes 70% of the viewport width */
+  height: 100%; /* Takes full height of the viewport */
+  position: relative; /* Allows positioning children relative to this container */
+  background-color: #e87625; /* Optional: Sets a black background */
+  overflow: hidden; /* Prevents overflow of particles outside this container */
+}
+.scene-container .imagine{
+  font-size: 70px;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
